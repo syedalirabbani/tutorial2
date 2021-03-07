@@ -1,21 +1,20 @@
+
 function isPrime(num){
-	// 1) Assume this number is prime.
-	var answer = true;
-	// 2) create test to prove our assumption wrong
-	//list down all the number between 2 and itself
-	for (var i = 2; i<num; i++){
+	//assume the answer is true
+    var answer = true;
+  	//create test to test prime number. if it is divisible by i, that is not a prime.
+  for (var i =2; i<num; i++){
+    if (num % i == 0){
+      return false;
+    }
+  }
+	//return answer
+      return answer;
+  }
 
-// check if the number is divisible by i .. once it is divisible by a number it is false -> My assumption is wrong
-
-	if(num % i == 0){
-		return false;
-	}
-// 3) return our answer
-	return answer;
-	}
-	for (var i = 2; i<1000:i++){
-		if(isPrime(i)){
-			console.log(i);
-		}
-	}
+	//create loop and and give range. put function to work.
+  for (var i = 2; i<100; i++){
+    if (isPrime(i)){
+      console.log(i);
+  }
 }
