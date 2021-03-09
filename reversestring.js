@@ -1,3 +1,7 @@
+//-------------------
+//method 1
+//--------------------
+
 function reverseString(str) {
 	var answer ="";
 	for (var i = 0; i<str.length; i++){
@@ -7,3 +11,13 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+
+
+//--------------------
+//method 2
+//-----------------------
+function reverseString(str){
+	return str.split("").reverse().join("")
+}
+
+console.log(reverseString("Hello"))
